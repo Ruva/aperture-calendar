@@ -780,7 +780,7 @@ table.calendar-legend tr.even .stripe {
   float: none;
   padding: 5px 0;
   position: absolute;
-  right: 60px;
+  right: 70px;
   left: auto;
   text-align: right;
   top: 0px;
@@ -819,7 +819,7 @@ table.calendar-legend tr.even .stripe {
   float: none;
   padding: 5px 0;
   position: absolute;
-  right: 0px;
+  right: 10px;
   text-align: right;
   top: 0px;
   width: auto;
@@ -873,4 +873,8 @@ ul.calendar-links,
 .year-view div.month-view div.date-nav {
   background-color: #DFDFDF;
   min-height: 20px;
+}
+
+.view-calendar {
+
 }
