@@ -1,6 +1,11 @@
 /**
  * calendar calendar table styles
  */
+ 
+ .calendar-calendar a:visited {
+	 color:#6B7FA7;
+ }
+ 
 .calendar-calendar tr.odd, .calendar-calendar tr.even {
   background-color: #fff;
 }
@@ -60,6 +65,7 @@
   padding: 0;
 }
 
+
 /**
  * simplify the mini calendar by removing borders
  */
@@ -91,7 +97,7 @@
   margin: 0;
 }
 .calendar-calendar .inner div {
-  padding: 0;
+  padding: 0px 0px 2px 0px;
   margin: 0;
 }
 /**
@@ -602,7 +608,7 @@ table.calendar-legend tr.even .stripe {
 .calendar-calendar .week-view .full td.single-day div.weekview,
 .calendar-calendar .day-view .full td.single-day div.dayview {
   width: auto;
-  padding: 0px 3px;
+  padding: 0px 5px;
   overflow: hidden;
 }
 
@@ -880,10 +886,6 @@ ul.calendar-links,
   min-height: 20px;
 }
 
-.view-calendar {
-
-}
-
 
 .field-content {
 	display: inline;
@@ -894,12 +896,14 @@ span.views-field-edit-node a, span.views-field-delete-node a {
 	color: #CFCFCF;
 }
 
+span.views-field-edit-node a:visited, span.views-field-delete-node a:visited {
+	color: #CFCFCF;
+}
+
 span.views-field-edit-node a:hover, span.views-field-delete-node a:hover{
 	color: red;
 }
 /* -------- END EDIT/DELETE EVENT STYLE ----------  */
-
-
 
 
 
@@ -941,6 +945,12 @@ span.field-label-group-wrap {
 	box-shadow:none;
 	background-color:inherit;
 	font-weight:bold;
+	line-height:1em;
+}
+
+/* --- vertical bar between edit and delete --- */
+.calendar-item-time-vbar {
+	color: #F7F5F5;
 }
 
 /* -------- END CALEDAR-MONTH PAGE STYLE ----------  */
