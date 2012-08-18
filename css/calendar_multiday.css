@@ -16,6 +16,12 @@
   padding: 0;
   margin: 0;
   width: 100%;
+ /*box-shadow: 0px 0px 7px #A0A0A0;*/
+ 
+ box-shadow: 0px 0px 3px 2px #E4E4E4;
+ -webkit-box-shadow: 0px 0px 3px 2px #E4E4E4;
+ -moz-box-shadow: 0px 0px 3px 2px #E4E4E4
+ 
 }
 
 /**
@@ -99,9 +105,8 @@
   font-weight: bold;
   text-decoration: none;
 }
-.calendar-calendar td a:hover {
-  text-decoration: underline;
-}
+
+
 .calendar-calendar td.year,
 .calendar-calendar td.month {
   text-align: center;
@@ -368,12 +373,7 @@ table.calendar-legend tr.even .stripe {
   font-weight: normal;
 }
 
-.calendar-calendar td span.date-display-single,
-.calendar-calendar td span.date-display-start,
-.calendar-calendar td span.date-display-end,
-.calendar-calendar td span.date-display-separator {
-  font-weight: bold;
-}
+
 .calendar-calendar td .inner div.day a {
   color: #4b85ac;
 }
@@ -548,26 +548,31 @@ table.calendar-legend tr.even .stripe {
 .calendar-calendar .month-view .full tr.odd td.today,
 .calendar-calendar .month-view .full tr.even td.today {
   background: none;
-  border-left: 2px solid #7C7F12;
-  border-right: 2px solid #7C7F12;
+/*  border-left: 2px solid #3ABE28;
+  border-right: 2px solid #3ABE28;*/
+  
 }
 
 .calendar-calendar .month-view .full td.date-box.today {
-  border-width: 2px 2px 0px 2px;
+/*  border-width: 2px 2px 0px 2px;
   border-style: solid;
-  border-color: #7C7F12;
+  border-color: #7C7F12;*/
+  background-color:#74ae26;
+}
+.calendar-calendar .month-view .full td.date-box.today a {
+  color:white;
 }
 
 .calendar-calendar .month-view .full tr td.single-day.today {
-  border-bottom: 2px solid #7C7F12;
+ /* border-bottom: 2px solid #3ABE28;*/
 }
 
 .calendar-calendar .month-view .full tr td.multi-day.starts-today {
-  border-left: 2px solid #7C7F12;
+ /* border-left: 1px solid #7C7F12;*/
 }
 
 .calendar-calendar .month-view .full tr td.multi-day.ends-today {
-  border-right: 2px solid #7C7F12;
+  /*border-right: 1px solid #7C7F12;*/
 }
 
 .calendar-calendar .month-view .full tr td.multi-day,
@@ -578,6 +583,7 @@ table.calendar-legend tr.even .stripe {
 .calendar-calendar .month-view .full tr td.multi-day,
 .calendar-calendar .month-view .full tr td.date-box {
   border-bottom: 0px;
+  background-color:rgb(250, 250, 250);
 }
 
 .calendar-calendar .month-view .full .inner .monthview,
@@ -595,7 +601,6 @@ table.calendar-legend tr.even .stripe {
 .calendar-calendar .month-view .full td.single-day div.monthview,
 .calendar-calendar .week-view .full td.single-day div.weekview,
 .calendar-calendar .day-view .full td.single-day div.dayview {
-  background: #ffc;
   width: auto;
   padding: 0px 3px;
   overflow: hidden;
@@ -878,3 +883,97 @@ ul.calendar-links,
 .view-calendar {
 
 }
+
+
+.field-content {
+	display: inline;
+}
+
+/* -------- EDIT/DELETE EVENT STYLE ----------  */
+span.views-field-edit-node a, span.views-field-delete-node a {
+	color: #CFCFCF;
+}
+
+span.views-field-edit-node a:hover, span.views-field-delete-node a:hover{
+	color: red;
+}
+/* -------- END EDIT/DELETE EVENT STYLE ----------  */
+
+
+
+
+
+
+/* -------- TIME FIELD STYLING ----------  */
+div.views-field-field-event-date {
+	font-weight:normal;
+}
+
+.calendar-calendar td span.date-display-single {
+	font-weight:normal;
+	background-image:url('../images/clock-icon.png');
+	background-repeat:no-repeat;
+	padding-left: 15px;
+	margin-left:0px;
+}
+/* -------- END TIME FIELD STYLING ----------  */
+
+
+
+
+/* -------- GROUP FIELD STYLING ----------  */
+
+span.field-label-group-wrap {
+	background-image: url('../images/user-group.png');
+	background-repeat:no-repeat;
+	padding-left: 15px;
+	
+}
+/* -------- END GROUP FIELD STYLING ----------  */
+
+
+
+
+
+/* -------- CALEDAR-MONTH PAGE STYLE ----------  */
+.page-calendar #content {
+	padding:0px;
+	box-shadow:none;
+	background-color:inherit;
+	font-weight:bold;
+}
+
+/* -------- END CALEDAR-MONTH PAGE STYLE ----------  */
+
+
+
+
+/* -------- ADD NEW TASK ----------  */
+.calendar-add-new-task {
+	font-family: inherit;
+	font-size: 11px;
+	text-transform: uppercase;	
+	padding: 0 10px 0px 10px;
+}
+
+.calendar-add-new-task-container {
+	moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	background: none repeat scroll 0 0 #DFDFDF;
+	float: none;
+	padding: 5px 0;
+	position: absolute;
+	right: 150px;
+	left: auto;
+	text-align: right;
+	width: auto;
+	z-index: 1;
+	font-size: 12px;
+}
+
+.calendar-add-new-task-container:hover {
+	box-shadow: 0px 0px 0px 1px #E4E4E4;
+	-webkit-box-shadow: 0px 0px 2px 1px #E4E4E4;
+	-moz-box-shadow: 0px 0px 2px 1px #E4E4E4;
+}
+/* -------- END ADD NEW TASK ----------  */
