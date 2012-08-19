@@ -950,7 +950,7 @@ span.field-label-group-wrap {
 
 /* --- vertical bar between edit and delete --- */
 .calendar-item-time-vbar {
-	color: #F7F5F5;
+	color: rgba(231, 200, 133, 0.49);
 }
 
 /* -------- END CALEDAR-MONTH PAGE STYLE ----------  */
