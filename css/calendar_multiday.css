@@ -1040,8 +1040,8 @@ span.field-label-group-wrap {
 
 /* adjust side textarea */
 .page-node-add-event #edit-body-und-0-value {
-	width: 485px;
-	height: 135px;
+	width: 360px;
+	height: 80px;
 	margin-top: 5px	
 }
 
@@ -1087,13 +1087,19 @@ span.field-label-group-wrap {
 
 .page-node-add-event label[for=edit-body-und-0-value] {
 	position: relative;
-	top: 80px;
+	top: 56px;
 }
 
 
 .page-node-add-event .form-submit {
 	float:right;
-	margin-right: 37px;	
+	margin-right: 165px;	
+	margin-top:7px;
+}
+
+/* remove spacing below the textarea */
+.page-node-add-event .form-textarea-wrapper {
+	height: 80px;
 }
 
 
