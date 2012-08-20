@@ -1025,7 +1025,12 @@ span.field-label-group-wrap {
 }
 
 .page-node-add-event select.form-select{
-	margin-right: 412px;
+	margin-right: 410px;
+}
+
+/*style label for group picker*/
+.page-node-add-event label[for=edit-field-group-und]{
+	margin-right: 8px;
 }
 
 /* hide random border */
@@ -1110,4 +1115,12 @@ span.field-label-group-wrap {
 
 .page-node-add-event.overlay .form-submit {
 	float:left;
+}
+
+
+/* -------- GROUP PAGE BOX SHADOW ----------*/
+.page-calendar-grouped .day-view {
+ 	box-shadow: 0px 0px 3px 2px #E4E4E4;
+ 	-webkit-box-shadow: 0px 0px 3px 2px #E4E4E4;
+ 	-moz-box-shadow: 0px 0px 3px 2px #E4E4E4;
 }
