@@ -35,16 +35,17 @@
   border: 1px solid #E39364;
 }
 
+/* bottom footer*/
 .calendar-calendar .week-view .header-body-divider,
 .calendar-calendar .week-view .single-day-footer,
 .calendar-calendar .day-view .single-day-footer,
 .calendar-calendar .day-view .header-body-divider {
-  background: #eeeeee;
+/*  background: #eeeeee;
   border-left: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
   font-size: 1px;
-  height: 4px;
-  line-height: 1px;
+  height: 4px;*/
+  line-height: 0px;
 }
 
 .calendar-calendar .week-view #multi-day-container,
