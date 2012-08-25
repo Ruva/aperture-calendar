@@ -51,6 +51,7 @@
 .calendar-calendar th {
   text-align: center;
   margin: 0;
+  height:30px;
 }
 .calendar-calendar th a {
   font-weight: bold;
